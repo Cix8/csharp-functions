@@ -28,8 +28,9 @@ int Quadrato(int numero)
 
 int[] ElevaArrayAlQuadrato(int[] array)
 {
-    int[] arrayCopy = new int[array.Length];
-    Array.Copy(array, 0, arrayCopy, 0, array.Length);
+    //int[] arrayCopy = new int[array.Length];
+    //Array.Copy(array, 0, arrayCopy, 0, array.Length;
+    int[] arrayCopy = (int[])array.Clone();
     for (int i = 0; i < array.Length; i++)
     {
         arrayCopy[i] = Quadrato(array[i]);
